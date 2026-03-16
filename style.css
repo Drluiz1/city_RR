@@ -1,6 +1,4 @@
-/* ══════════════════════════
-   TEMA ESCURO (padrão)
-══════════════════════════ */
+
 :root {
   --bg:      #080c14;
   --bg2:     #0d1220;
@@ -15,9 +13,6 @@
   --nav-bg:  rgba(8,12,20,0.88);
 }
 
-/* ══════════════════════════
-   TEMA CLARO
-══════════════════════════ */
 body.light {
   --bg:      #f1f5f9;
   --bg2:     #e2e8f0;
@@ -32,9 +27,7 @@ body.light {
   --nav-bg:  rgba(241,245,249,0.92);
 }
 
-/* ══════════════════════════
-   RESET & BASE
-══════════════════════════ */
+
 * { margin: 0; padding: 0; box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 
@@ -46,15 +39,12 @@ body {
   transition: background 0.3s, color 0.3s;
 }
 
-/* conteúdo acima das partículas */
 body > *:not(#particles-js) {
   position: relative;
   z-index: 1;
 }
 
-/* ══════════════════════════
-   PARTICLES
-══════════════════════════ */
+
 #particles-js {
   position: fixed;
   inset: 0;
@@ -64,10 +54,7 @@ body > *:not(#particles-js) {
   transition: background 0.3s;
 }
 
-/* ══════════════════════════
-   BOTÃO TEMA
-   Canto inferior DIREITO
-══════════════════════════ */
+
 .theme-btn {
   position: fixed !important;
   bottom: 28px !important;
@@ -93,9 +80,7 @@ body > *:not(#particles-js) {
   box-shadow: 0 6px 28px rgba(0,212,255,0.7) !important;
 }
 
-/* ══════════════════════════
-   NAV
-══════════════════════════ */
+
 nav {
   position: fixed;
   top: 0; left: 0; right: 0;
@@ -130,9 +115,6 @@ nav {
 }
 .nav-links a:hover { color: var(--cyan); }
 
-/* ══════════════════════════
-   HERO
-══════════════════════════ */
 #hero {
   min-height: 100vh;
   display: flex;
@@ -240,9 +222,6 @@ nav {
   color: #080c14;
 }
 
-/* ══════════════════════════
-   TERMINAL
-══════════════════════════ */
 .terminal {
   background: var(--bg2);
   border: 1px solid var(--border);
@@ -296,9 +275,6 @@ nav {
 }
 @keyframes blink { 0%,50%{opacity:1} 51%,100%{opacity:0} }
 
-/* ══════════════════════════
-   SEÇÕES
-══════════════════════════ */
 section {
   max-width: 1100px;
   margin: 0 auto;
@@ -330,9 +306,6 @@ section {
   margin: 0 auto;
 }
 
-/* ══════════════════════════
-   SKILLS
-══════════════════════════ */
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -371,9 +344,7 @@ section {
 }
 .tag-item:hover { background: rgba(0,212,255,0.15); }
 
-/* ══════════════════════════
-   PROJETOS
-══════════════════════════ */
+
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
@@ -433,9 +404,6 @@ section {
   border-radius: 3px;
 }
 
-/* ══════════════════════════
-   EXPERIÊNCIA — TIMELINE
-══════════════════════════ */
 .exp-list {
   display: flex;
   flex-direction: column;
@@ -486,9 +454,6 @@ section {
   border-radius: 3px;
 }
 
-/* ══════════════════════════
-   ABOUT / STATS
-══════════════════════════ */
 .about-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -539,9 +504,7 @@ section {
 .stat-number { font-family: 'Space Mono', monospace; font-size: 1.9rem; color: var(--cyan); font-weight: 700; }
 .stat-label  { font-size: 0.78rem; color: var(--muted); margin-top: 6px; }
 
-/* ══════════════════════════
-   CONTACT
-══════════════════════════ */
+
 .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start; }
 .contact-info > p { color: var(--muted); line-height: 1.8; margin-bottom: 28px; }
 .contact-links { display: flex; flex-direction: column; gap: 12px; }
@@ -588,9 +551,6 @@ section {
 .lang-name  { font-weight: 600; font-size: 0.88rem; }
 .lang-level { font-family: 'Space Mono', monospace; font-size: 0.7rem; color: var(--green); }
 
-/* ══════════════════════════
-   FOOTER
-══════════════════════════ */
 footer {
   border-top: 1px solid var(--border);
   padding: 36px 48px;
@@ -605,15 +565,11 @@ footer {
 footer p        { color: var(--muted); font-size: 0.82rem; }
 .footer-location{ color: var(--muted); font-size: 0.75rem; }
 
-/* ══════════════════════════
-   FADE-UP
-══════════════════════════ */
+
 .fade-up { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
 .fade-up.visible { opacity: 1; transform: translateY(0); }
 
-/* ══════════════════════════
-   SCROLL TOP (canto direito)
-══════════════════════════ */
+
 .scroll-top {
   position: fixed;
   bottom: 92px;
@@ -635,9 +591,7 @@ footer p        { color: var(--muted); font-size: 0.82rem; }
 .scroll-top.show { opacity: 1; pointer-events: auto; }
 .scroll-top:hover { border-color: var(--cyan); }
 
-/* ══════════════════════════
-   HAMBURGER
-══════════════════════════ */
+
 .hamburger {
   display: none;
   flex-direction: column;
@@ -649,9 +603,7 @@ footer p        { color: var(--muted); font-size: 0.82rem; }
 }
 .hamburger span { display: block; width: 24px; height: 2px; background: var(--text); transition: background 0.3s; }
 
-/* ══════════════════════════
-   RESPONSIVO
-══════════════════════════ */
+
 @media (max-width: 768px) {
   nav { padding: 16px 20px; }
   .hamburger { display: flex; }
