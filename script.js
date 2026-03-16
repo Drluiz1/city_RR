@@ -1,6 +1,4 @@
-// ══════════════════════════
-// PARTICLES.JS
-// ══════════════════════════
+
 particlesJS('particles-js', {
   particles: {
     number: { value: 80, density: { enable: true, value_area: 800 } },
@@ -26,12 +24,8 @@ particlesJS('particles-js', {
   retina_detect: true
 });
 
-// ══════════════════════════
-// BOTÃO TEMA CLARO / ESCURO
-// ══════════════════════════
 const themeBtn = document.getElementById('themeBtn');
 
-// Aplica preferência salva
 if (localStorage.getItem('theme') === 'light') {
   document.body.classList.add('light');
   themeBtn.textContent = '☀️';
@@ -45,9 +39,6 @@ themeBtn.addEventListener('click', () => {
   localStorage.setItem('theme', isLight ? 'light' : 'dark');
 });
 
-// ══════════════════════════
-// HAMBURGER
-// ══════════════════════════
 const ham      = document.getElementById('ham');
 const navLinks = document.getElementById('navLinks');
 
@@ -56,17 +47,12 @@ navLinks.querySelectorAll('a').forEach(a =>
   a.addEventListener('click', () => navLinks.classList.remove('open'))
 );
 
-// ══════════════════════════
-// SCROLL TOP
-// ══════════════════════════
 const scrollTopBtn = document.getElementById('scrollTop');
 window.addEventListener('scroll', () => {
   scrollTopBtn.classList.toggle('show', window.scrollY > 400);
 });
 
-// ══════════════════════════
-// FADE-UP AO ROLAR
-// ══════════════════════════
+
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry, i) => {
     if (entry.isIntersecting) {
@@ -78,9 +64,7 @@ const observer = new IntersectionObserver((entries) => {
 
 document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
 
-// ══════════════════════════
-// NAV ATIVA AO ROLAR
-// ══════════════════════════
+
 const sections = document.querySelectorAll('section[id], div[id="hero"]');
 const navAs    = document.querySelectorAll('.nav-links a');
 
